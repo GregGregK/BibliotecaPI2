@@ -1,0 +1,35 @@
+body{
+    background-image: url(/assets/img/Library\ 1.jpg);
+    background-size: cover;
+}
+.login-container{
+    max-width: 450px;
+    margin: 10rem auto;
+    background-color: var(--color-salmao);
+    padding: 1.5rem;
+    border-radius: 15px;
+   
+}
+
+.user-login-form{
+    padding: 0.5rem;
+    margin: 0.3rem auto;
+}
+
+
+.user-password-form{
+    padding: 0.5rem;
+    margin: 0.3rem auto;
+}
+
+.form-control{
+    display: flex;
+}
+
+
+.login-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #CCC;
+    font-size: 10px;
+}
