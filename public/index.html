@@ -11,26 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/views/styles.css">
     <link rel="stylesheet" href="/views/index.css">
+    <script src="/js/scripts.js" defer></script>
     <title>Página inicial</title>
 </head>
 <body>
+    
     <div class="login-container">
-        <header>
-            <h1>Olá, visitante</h1>
-        </header>
-        <form id="user-login">
-            <div class="form-control">
-                <i class="fa-solid fa-user"></i> <input type="text" id="input-usuario" placeholder="Usuário">
-            </div>   
-        </form>
-        <form id="user-password">
-            <div class="form-control">
-                <i class="fa-solid fa-lock"></i> <input type="text" id="input-password" placeholder="Senha">
-            </div>
-        </form>
-        <button id="button-login">Login</button>
-        <p>Precisa de ajuda? <u>Clique aqui?</u></p>
+        <div class="message">
+            <header>
+                <h1>Olá, visitante</h1>
+            </header>
+        </div>
+        <div class="form-content">
+            <form id="user-login">
+                <div class="form-control">
+                    <i class="fa-solid fa-user"></i> <input type="text" id="input-usuario" placeholder="Usuário">
+                </div>   
+            </form>
+            <form id="user-password">
+                <div class="form-control">
+                    <i class="fa-solid fa-lock"></i> <input type="password" id="input-password" placeholder="Senha">
+                </div>
+            </form>
+        </div>
+        <div class="button-confirm">
+            <button onclick="logar()" id="button-login">Logar</button></a>
+            <p>Precisa de ajuda? <u>Clique aqui?</u></p>
+        </div>
     </div>
+    
 
 
 
