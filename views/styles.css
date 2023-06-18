@@ -1,0 +1,52 @@
+* { 
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-laranja: #D96C1E;
+    --color-bege: #9F6B46;
+    --color-marrom-claro: #8B4513;
+    --color-salmao: #D9925F;
+    --color-marrom-escuro: #592C0C;
+}
+
+body{
+    background-image: url(/img/Library\ 1.jpg);
+    background-size: cover;
+}
+
+.login-container{
+    max-width: 450px;
+    margin: 10rem auto;
+    background-color: var(--color-salmao);
+    padding: 1.5rem;
+    border-radius: 15px;
+   
+}
+
+.user-login-form{
+    padding: 0.5rem;
+    margin: 0.3rem auto;
+}
+
+
+.user-password-form{
+    padding: 0.5rem;
+    margin: 0.3rem auto;
+}
+
+.form-control{
+    display: flex;
+}
+
+
+.login-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #CCC;
+    font-size: 10px;
+}
