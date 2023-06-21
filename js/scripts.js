@@ -35,17 +35,26 @@ let botao = document.getElementById('button-login');
 
 botao.addEventListener('click', function logar(){
     let pegaUsuario = document.getElementById('input-usuario').value
-    let pegaSenha = document.getElementById('input-senha').value
+    let pegaSenha = document.getElementById('input-password').value
+    let validaLogin = false
 
 
     for(let i in usuarios){
         if(pegaUsuario == usuarios[i].login && pegaSenha == usuarios[i].pass){
-            location.href="index.html"
-        }else if(login == "admin" && senha == "admin"){
-            location.href="admin.html"
-        }else{
-            alert("USUARIO OU SENHA INCORRETA!")
+            location.href="pages/home.html"
+            validaLogin = true
+            break
+        }else if(pegaUsuario == "admin" && pegaSenha == "admin"){
+            location.href="pages/admin.html"
+            validaLogin = true
+            break
         }
+    }
+
+    if(validaLogin == true){
+        alert('ok')
+    }else{
+        alert('erro')
     }
 })
     
