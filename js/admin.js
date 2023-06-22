@@ -1,8 +1,8 @@
 // Seleção de elementos
 
-const todoForm = document.querySelector("#todo-form")
-const todoInput = document.querySelector("#todo-input")
-const todoList = document.querySelector("#todo-list")
+const bookForm = document.querySelector("#book-form")
+const bookInput = document.querySelector("#book-input")
+const bookList = document.querySelector("#book-list")
 const editForm = document.querySelector("#edit-form")
 const editInput = document.querySelector("#edit-input")
 const cancelEdtBtn = document.querySelector("#cancel-edit-btn")
@@ -12,67 +12,67 @@ let oldInputValue
 
 
 // Funções
-const saveTodo = (text) =>{
+const saveBook = (text) =>{
 
-    const todo = document.createElement("div")
-    todo.classList.add("todo")
+    const book = document.createElement("div")
+    book.classList.add("book")
 
-    const todoTitle = document.createElement("h3")
-    todoTitle.innerText = text
-    todo.appendChild(todoTitle)
-    console.log(todo)
+    const bookTitle = document.createElement("h3")
+    bookTitle.innerText = text
+    book.appendChild(bookTitle)
+    console.log(book)
 
     const editBtn = document.createElement("button")
-    editBtn.classList.add("edit-todo")
+    editBtn.classList.add("edit-book")
     editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>'
-    todo.appendChild(editBtn)
+    book.appendChild(editBtn)
     
     const doneBtn = document.createElement("button")
-    doneBtn.classList.add("finish-todo")
+    doneBtn.classList.add("finish-book")
     doneBtn.innerHTML = '<i class="fa-solid fa-check"></i>'
-    todo.appendChild(doneBtn)
+    book.appendChild(doneBtn)
 
     const deleteBtn = document.createElement("button")
-    deleteBtn.classList.add("remove-todo")
+    deleteBtn.classList.add("remove-book")
     deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'
-    todo.appendChild(deleteBtn);
+    book.appendChild(deleteBtn);
 
-    todoList.appendChild(todo);
+    bookList.appendChild(book);
 
-    todoInput.value = "";
-    todoInput.focus();
+    bookInput.value = "";
+    bookInput.focus();
 
 };
 
 const toggleForms = () => {
         editForm.classList.toggle("hide");
-        todoForm.classList.toggle("hide");
-        todoList.classList.toggle("hide");
+        bookForm.classList.toggle("hide");
+        bookList.classList.toggle("hide");
     }
 
-const updateTodo = (text) => {
-    const todos = document.querySelectorAll(".todo")
+const updatebook = (text) => {
+    const books = document.querySelectorAll(".book")
 
-    todos.forEach((todo) => {
-        let todoTitle = todo.querySelector("h3")
+    books.forEach((book) => {
+        let bookTitle = book.querySelector("h3")
 
-        if(todoTitle.innerText === oldInputValue){
-            todoTitle.innerText = text
+        if(bookTitle.innerText === oldInputValue){
+            bookTitle.innerText = text
         }
     })
 }
 
 // Eventos
-todoForm.addEventListener("submit", (e) => {
+bookForm.addEventListener("submit", (e) => {
     e.preventDefault()
 
     console.log("Enviou form")
 
-    const inputValue = todoInput.value
+    const inputValue = bookInput.value
 
     if(inputValue){
-        // save todo
-        saveTodo(inputValue)
+        // save book
+        saveBook(inputValue)
     }
 });
 
@@ -80,26 +80,26 @@ document.addEventListener("click", (e) => {
 
     const targetEl = e.target
     const parentEl = targetEl.closest("div");
-    let todoTitle;
+    let bookTitle;
 
 
     //verifica se o parentel existe
     if (parentEl && parentEl.querySelector("h3")){
-        todoTitle = parentEl.querySelector("h3").innerText;
+        bookTitle = parentEl.querySelector("h3").innerText;
     }
 
-    if(targetEl.classList.contains("finish-todo")){
+    if(targetEl.classList.contains("finish-book")){
         parentEl.classList.toggle("done")
     }
 
-    if(targetEl.classList.contains("remove-todo")){
+    if(targetEl.classList.contains("remove-book")){
         parentEl.remove();
     }
 
-    if(targetEl.classList.contains("edit-todo")){
+    if(targetEl.classList.contains("edit-book")){
         toggleForms();
-        editInput.value = todoTitle
-        oldInputValue = todoTitle
+        editInput.value = bookTitle
+        oldInputValue = bookTitle
         
     }
 });
@@ -115,7 +115,7 @@ editForm.addEventListener("submit", (e) => {
     const editInputValue = editInput.value
 
     if(editInputValue){
-        updateTodo(editInputValue)
+        updatebook(editInputValue)
     }
 
     toggleForms()
@@ -129,9 +129,9 @@ searchInput.addEventListener("input", (e) => {
 
 let tarefas = [];
 
-const listTodo = (tarefa) => {
+const listbook = (tarefa) => {
     tarefas.push(tarefa);
     tarefas.forEach(tarefa => {
-        saveTodo(tarefa);
+        saveBook(tarefa);
     })
 }

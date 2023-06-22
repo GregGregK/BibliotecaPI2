@@ -14,19 +14,29 @@
     <link rel="stylesheet" href="/views/admin.css">
 </head>
 <body>
-    <div class="todo-container">
+
+   <!-- Painel admin -->
+    <div class="book-container">
         <header>
-           <h1>Painel</h1>
+           <h1>Painel de administrador</h1>
         </header>
-        <form id="todo-form">
-           <p>Adicione um novo livro</p>
+        <form id="book-form">
+           <p>Adicione o livro</p>
+           
            <div class="form-control">
-              <input type="text" id="todo-input" placeholder="Digite o nome">
-              <button type="submit">
-              <i class="fa-thin fa-plus"></i>
-              </button>
+              <input type="text" id="book-input" placeholder="Digite o nome">
            </div>
+           <div class="form-control">
+            <input type="number" id="isbn-input" placeholder="Digite o isbn">
+         </div>
+         <div class="form-control">
+            <input type="text" id="author-input" placeholder="Digite o autor">
+         </div>
+         <button type="submit">
+            <i class="fa-thin fa-plus"></i>
+            </button>
         </form>
+        
         <form id="edit-form" class="hide">
            <p>Edite seu livro:</p>
            <div class="form-control">
@@ -37,28 +47,9 @@
            </div>
            <button id="cancel-edit-btn">Cancelar</button>
         </form>
-        <div id="toolbar">
-           <div id="search">
-              <h4>Pesquisar: </h4>
-              <form>
-                 <input type="text" id="search-input" placeholder="Buscar">
-                 <button id="erase-button">
-                 <i class="fa-solid fa-delete-left"></i>
-                 </button>
-              </form>
-           </div>
-           <div id="filter">
-              <h4>Filtrar: </h4>
-              <select id="filter-select">
-                 <option value="all">Todos</option>
-                 <option value="done">Feitos</option>
-                 <option value="todo">A Fazer</option>
-              </select>
-           </div>
+        <div id="book-list" class="bookList">
         </div>
-        <div id="todo-list" class="todoList">
-        </div>
-
+</div>
 
 </body>
 </html>

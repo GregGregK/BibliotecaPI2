@@ -13,22 +13,20 @@ body{
 
 
 * { 
+    
     padding: 0;
     margin: 0;
-    font-family: Helvetica;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #000000;
     box-sizing: border-box;
 }
 
-body{
-    background-image: url("../img/bg.jpg");
-    background-size: cover;
-}
+
 
 button{
     background-color: var(--main-color-btn);
     color: var(--secondary-color-btn);
-    border: 2px solid #2596be;
+    border: 2px solid #8B4513;
     padding: 0.3rem 0.6rem;
     font-size: 1rem;
     cursor: pointer;
@@ -40,7 +38,8 @@ button{
 }
 
 button:hover {
-    background-color: #0b2d39;
+    background-color: #8B4513;
+    border: 2px solid black
 }
 
 button:hover > i { 
@@ -61,21 +60,24 @@ input, select{
     display: none;
 }
 
-.todo-container{
-    max-width: 450px;
+.book-container{
+    max-width: 650px;
     margin: 3rem auto;
     background-color: var(--third-color-btn);
     padding: 1.5rem;
-    border-radius: 15px;
 }
 
-.todoList{
+.book-container h1{
+    color: white;
+}
+
+.bookList{
     max-height: 450px;
     overflow-y: auto;
     scroll-behavior: smooth;
 }
 
-.todo-container header{
+.book-container header{
     text-align: center;
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #CCC;
@@ -83,20 +85,23 @@ input, select{
 }
 
 
-#todo-form,
+#book-form,
 #edit-form{
     padding: 1rem;
     border-bottom: 1px solid #CCC;
 }
 
-#todo-form p,
+#book-form p,
 #edit-form p{
     margin-bottom: .5rem;
     font-weight: bold;
+    color: white;
 }
 
 .form-control{
     display: flex;
+    padding: 10px;
+    flex-direction: column;
 }
 
 .form-control input{
@@ -105,6 +110,7 @@ input, select{
 
 #cancel-edit-btn{
     margin-top: 1rem;
+    color: white;
 }
 
 #toolbar {
@@ -145,7 +151,7 @@ input, select{
     flex: 1;
 }
 
-.todo {
+.book {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -154,12 +160,12 @@ input, select{
     transition: 0.3s;
 }
 
-.todo h3{
+.book h3{
     flex: 1;
     font-size: 0.9rem;
 }
 
-.todo button{
+.book button{
     margin-left: 0.4rem;
 }
 
