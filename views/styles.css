@@ -72,7 +72,7 @@ nav .wrapper{
     line-height: 45px;
     position: absolute;
     opacity: 0;
-    visibility: hidden;
+    visibility: none;
 }
 
 .nav-links li:hover .drop-menu,
@@ -282,7 +282,7 @@ nav .wrapper{
         font-size: 19px;
     }
     .nav-links .desktop-item{
-        display: none;
+        display: none !important;
     }
 }
 
