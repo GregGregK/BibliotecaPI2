@@ -1,21 +1,3 @@
-// function logar(){
-//     var login = document.getElementById('input-usuario').value;
-//     var senha = document.getElementById('input-password').value;
-
-//     if(login == "admin" && senha == "admin"){
-//         location.href="pages/admin.html"
-//     }else if(login == "aluno" && senha =="aluno"){
-        
-//         location.href="pages/home.html"
-//     }
-//     else{
-//         alert('usuario ou senha errado')
-//     }
-
-
-// }
-
-
 const usuarios = [
     {
         login: 'gregori_monteiro',
