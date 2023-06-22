@@ -15,8 +15,7 @@
 }
 
 nav{
-    background: bisque;
-    position: fixed;
+    background: #9F6B46;
     width: 100%;
     z-index: 999;
     height: 65px ;
@@ -35,7 +34,7 @@ nav .wrapper{
 }
 
 .wrapper .logo a{
-    color: grey;
+    color: black;
     text-decoration: none;
     font-size:27px ;
     font-weight: 600;
@@ -52,7 +51,7 @@ nav .wrapper{
 }
 
 .nav-links li a{
-    color: grey;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
