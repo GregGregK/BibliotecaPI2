@@ -1,5 +1,10 @@
-    @import "styles.css";
+@import "styles.css";
 
+
+    body{
+        background-color: #D9925F;
+    }
+  
     .container-cards {
         display: flex;
         justify-content: center;
@@ -10,7 +15,7 @@
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* ajuste o número de colunas conforme necessário */
+        grid-template-columns: repeat(3, 1fr); /* ajuste o número de colunas conforme necessário */
         grid-gap: 50px; /* ajuste o espaçamento entre os cards conforme necessário */
     }
 
@@ -18,19 +23,57 @@
         background-color: #f0f0f0; /* exemplo de cor de fundo para os cards */
         padding: 20px;
         text-align: center;
-        background-color: bisque;
-        width: 150px;
-        display: flex;
-        flex-direction: column;
+        background-color: #9F6B46;
+        width: 183px;
+        height: 307px;
+        flex-shrink: 0; 
+        overflow: hidden; /* esconde o conteúdo que não cabe na div */
+        word-wrap: break-word; /* quebra as palavras longas para caber na div */
+        white-space: nowrap; /* impede que o texto seja quebrado em várias linhas */
+        text-overflow: ellipsis; /* adiciona reticências para indicar que o texto foi cortado */       
+    }
+
+    .cards a{
+        text-decoration: none;
+    }
+    .cards:hover {
+        transform: translateY(-5px);
+    }
+    
+    .title{
+        font-weight: 600;
+        max-width: fit-content;
+        
+    }
+    .desc{
+        font-weight: 200;
+        max-width: fit-content;
+    }
+   
+
+    .cards img {
+        max-width: 100%;
+        height: auto;
     }
 
 
-    @media screen and (max-width: 498px){
+
+    @media screen and (max-width: 604px){
         .grid{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 20px;
         }
+        
+    }
+
+    @media screen and (max-width: 354px){
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+        }
+        
     }
 
     

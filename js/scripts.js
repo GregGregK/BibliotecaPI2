@@ -8,6 +8,10 @@ const usuarios = [
         pass: '$M701'
     },
     {
+        login: 'teste',
+        pass: 'teste'
+    },
+    {
         login: 'natan_bays',
         pass: 'lK742'
     }
