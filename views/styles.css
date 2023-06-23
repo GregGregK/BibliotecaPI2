@@ -14,6 +14,22 @@
     --color-marrom-escuro: #592C0C;
 }
 
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #592c0c #ffffff00;
+}
+*::-webkit-scrollbar {
+    width: 16px;
+}
+*::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #592c0c;
+    border-radius: 10px;
+    border: 3px solid #ffffff00;
+}
+
 nav{
     background: #9F6B46;
     width: 100%;
