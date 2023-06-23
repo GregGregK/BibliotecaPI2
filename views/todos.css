@@ -37,6 +37,7 @@
         text-decoration: none;
     }
     .cards:hover {
+        transition: .5s ease-out;
         transform: translateY(-5px);
     }
     
