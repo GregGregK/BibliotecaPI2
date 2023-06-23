@@ -1,0 +1,52 @@
+body {
+    background-color: var(--color-salmao);
+}
+
+.btn {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    color: #fff;
+    background-color: #592c0c;
+    padding: 10px 30px;
+    border: solid #000000 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition: 1000ms;
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 1000ms;
+    padding: 10px 50px;
+    transform: translateY(-0px);
+    background-color: #fff;
+    color: #0066cc;
+    border: solid 2px #000000;
+}
+
+#cor {
+    color: #AAFFA3;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.info-livro {
+    width: 30%;
+
+    text-align: center;
+}
+
+#menu-image {
+   padding: 10px;
+}
+
+.info-livro-desc {
+    width: 70%;
+    text-align: center;
+    
+}
