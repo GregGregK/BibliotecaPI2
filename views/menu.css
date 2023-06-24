@@ -50,3 +50,7 @@ body {
     text-align: center;
     
 }
+
+.info-livro-desc .titulo, .autor, .desc{
+    text-align: left;
+}

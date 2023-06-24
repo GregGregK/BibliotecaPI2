@@ -3,6 +3,7 @@
 
     body{
         background-color: #D9925F;
+        overflow-x: hidden;
     }
   
     .container-cards {
@@ -10,13 +11,13 @@
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        margin-top: 60px; /* ajuste o valor conforme necessário */
+        margin-top: 60px; 
     }
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* ajuste o número de colunas conforme necessário */
-        grid-gap: 50px; /* ajuste o espaçamento entre os cards conforme necessário */
+        grid-template-columns: repeat(3, 1fr); /* número de colunas conforme */
+        grid-gap: 50px; /* espaçamento entre os cards */
     }
 
     .cards {
@@ -26,29 +27,28 @@
         background-color: #9F6B46;
         width: 183px;
         height: 307px;
-        flex-shrink: 0; 
-        overflow: hidden; /* esconde o conteúdo que não cabe na div */
+        flex-shrink: 0;
         word-wrap: break-word; /* quebra as palavras longas para caber na div */
-        white-space: nowrap; /* impede que o texto seja quebrado em várias linhas */
-        text-overflow: ellipsis; /* adiciona reticências para indicar que o texto foi cortado */       
-    }
-
-    .cards a{
+        max-width: 100%; /* define a largura máxima da div */
+        margin-bottom: 10px;
+      }
+      
+      .cards a {
         text-decoration: none;
-    }
-    .cards:hover {
+      }
+      
+      .cards:hover {
         transition: .5s ease-out;
         transform: translateY(-5px);
-    }
+      }
     
-    .title{
+      .title{
         font-weight: 600;
-        max-width: fit-content;
         
     }
-    .desc{
+    .autor{
         font-weight: 200;
-        max-width: fit-content;
+        font-size: small;
     }
    
 
@@ -59,7 +59,7 @@
 
 
 
-    @media screen and (max-width: 604px){
+    @media screen and (max-width: 679px){
         .grid{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -68,13 +68,48 @@
         
     }
 
-    @media screen and (max-width: 354px){
+    @media screen and (max-width: 412px){
         .grid{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-gap: 20px;
         }
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #FFFFFF;
+        border-radius: 11px;
+        padding: 5px;
+        width: fit-content;
+    }
+    
+    #search-input {
+        resize: none;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 159px;
+        height: 29px;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    #search-input::placeholder {
+        color: #999999;
+    }
+    
+    #search-input:focus {
+        width: 200px;
         
     }
+
+    .no-results img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vh;
+      }
+
 
     
