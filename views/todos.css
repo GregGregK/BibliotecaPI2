@@ -21,16 +21,17 @@
     }
 
     .cards {
-        background-color: #f0f0f0; /* exemplo de cor de fundo para os cards */
+        background-color: #9F6B46;
         padding: 20px;
         text-align: center;
-        background-color: #9F6B46;
         width: 183px;
         height: 307px;
         flex-shrink: 0;
-        word-wrap: break-word; /* quebra as palavras longas para caber na div */
-        max-width: 100%; /* define a largura máxima da div */
+        word-wrap: break-word;
+        max-width: 100%;
         margin-bottom: 10px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+        transition: .3s ease-in;
       }
       
       .cards a {

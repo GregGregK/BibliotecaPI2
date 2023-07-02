@@ -1,0 +1,125 @@
+@import url(styles.css);
+
+/* Estilos gerais */
+body {
+    background-color: #D9925F;
+  }
+  
+  /* Container principal do perfil */
+  .profile-container {
+    margin: 60px;
+  }
+  
+  /* Caixa que contém a foto e os livros */
+  .profile-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  /* Foto do perfil */
+  .profile-pic {
+    display: flex;
+    flex-direction: column;
+    background-color: #9F6B46;
+    margin-right: 10px;
+    max-width: 450px;
+    padding: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Imagem da foto do perfil */
+  .profile-pic img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Nome do perfil */
+  .profile-pic .name {
+    font-weight: bold;
+  }
+  
+  /* Caixa dos livros */
+  .profile-books {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Grid dos livros */
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 900px) {
+    /* Grid com 2 colunas em telas menores */
+    .books-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 680px) {
+    /* Ajustes para telas ainda menores */
+    .profile-box {
+      gap: 100px;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    /* Foto do perfil alinhada ao topo */
+    .profile-pic {
+      align-self: flex-start;
+    }
+  
+    /* Grid com 1 coluna em telas menores */
+    .books-grid {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
+  }
+  
+  /* Estilos dos cards de livros */
+  .cards {
+    background-color: #9F6B46;
+    padding: 20px;
+    text-align: center;
+    width: 183px;
+    flex-shrink: 0;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+    transition: .3s ease-in;
+  }
+  
+  .cards a {
+    text-decoration: none;
+  }
+  
+  .cards:hover {
+    transition: .5s ease-out;
+    transform: translateY(-5px);
+  }
+  
+  /* Título do livro */
+  .title {
+    font-weight: 600;
+  }
+  
+  /* Autor do livro */
+  .autor {
+    font-weight: 200;
+    font-size: small;
+  }
+  
+  /* Imagem do livro */
+  .cards img {
+    max-width: 100%;
+    height: auto;
+  }
+  
