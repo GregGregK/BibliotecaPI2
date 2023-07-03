@@ -101,10 +101,7 @@ body {
     text-decoration: none;
   }
   
-  .cards:hover {
-    transition: .5s ease-out;
-    transform: translateY(-5px);
-  }
+  
   
   /* Título do livro */
   .title {
@@ -123,3 +120,12 @@ body {
     height: auto;
   }
   
+  .devolver-button{
+    background-color: #D9925F;
+    width: 100%;
+    border: none;
+  }
+
+  .devolver-button:hover{
+      cursor: pointer;
+  }

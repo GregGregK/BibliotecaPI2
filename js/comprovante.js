@@ -24,3 +24,7 @@
     }
     return result;
   }
+
+  function redirectToHome() {
+    window.location.href = "home.html";
+}
