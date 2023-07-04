@@ -1,2 +1,12 @@
 @import "styles.css";
+@import "todos.css";
+
+
+.carousel-container{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+
 
