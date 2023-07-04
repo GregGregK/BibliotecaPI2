@@ -11,9 +11,14 @@
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="/views/styles.css">
       <script src="/js/scripts.js" defer></script>
+      <link rel="stylesheet" href="/views/home.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <title>Home</title>
    </head>
-   <body>
+<body>
       <nav>
          <div class="wrapper">
             <div class="logo"><a href="home.html">Alexandria</a></div>
@@ -78,5 +83,77 @@
             <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
          </div>
       </nav>
-   </body>
+
+      <div class="carousel-container">
+         <div class="owl-carousel owl-theme">
+            <div class="item">
+               <div class="cards">
+                  <a href="menuInfo.html">
+                     <img src="/assets/img/712+f2W4uoL._AC_UF1000,1000_QL80_.jpg" alt="">
+                     <p class="title">IT a coisa</p>
+                     <p class="autor">Stephen king</p>
+                  </a>
+               </div>
+            </div>
+
+            <div class="item">
+               <div class="cards">
+                  <a href="menuInfo.html">
+                     <img src="/assets/img/karl-marx-s-das-kapital.jpg" alt="">
+                     <p class="title">O Capital: 1</p>
+                     <p class="autor">Karl Marx</p>
+                  </a>       
+               </div>
+            </div>
+
+            <div class="item">
+               <div class="cards">
+                  <a href="menuInfo.html">
+                     <img src="/assets/img/612uTfSKLvL._AC_UF1000,1000_QL80_.jpg" alt="">
+                        <p class="title">Universo em uma casca de noz</p>
+                     <p class="autor">Stephen Hawking</p>
+                  </a>
+               </div>
+            </div>
+
+            <div class="item">
+                  <div class="cards">
+                     <a href="menuInfo.html">
+                        <img src="/assets/img/Jogos vorazes.jpg" alt="">
+                        <p class="title">Jogos vorazes</p>
+                        <p class="autor">Suzanne Collins</p>
+                     </a>
+                  </div>
+            </div>
+         </div>
+      </div>
+
+      
+
+</body>
+<script>
+$('.owl-carousel').owlCarousel({
+   loop:true,
+   margin:10,
+   nav:true,
+   responsive:{
+      0:{
+            items:2
+      },
+      400:{
+            items:2
+      },
+      800:{
+            items:4
+      },
+      1000:{
+            items:6
+      }
+   }
+})
+</script>
+
+
+
+   
 </html>
