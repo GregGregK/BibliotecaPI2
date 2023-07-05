@@ -37,7 +37,6 @@
 nav{
     background: #9F6B46;
     width: 100%;
-    z-index: 999;
     height: 65px ;
     line-height: 65px;
 }
@@ -50,6 +49,7 @@ nav .wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 99;
 
 }
 

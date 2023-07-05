@@ -19,7 +19,7 @@
 
 .news-card{
     height: 80vh;
-    width:  90vw;
+    width:  90%;
     padding-left: 5vw;
     padding-right: 5vw;
     background-color: #9F6B46;
@@ -30,10 +30,30 @@
 }
 
 .book-pile{
-    height: 80%;
+    height: 70%;
 }
 
-p{
-    font-size:1.3em;
+.owl-carousel{
+    z-index: -1;
+    position: relative !important;
 }
+
+
+@media screen and (max-width:750px){
+
+    .news-card{
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .book-pile{
+        height: 40vw;
+    }
+
+    
+}
+
+
+
 
