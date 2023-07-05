@@ -19,29 +19,36 @@ const usuarios = [
 
 let botao = document.getElementById('button-login');
 
-botao.addEventListener('click', function logar(){
-    let pegaUsuario = document.getElementById('input-usuario').value
-    let pegaSenha = document.getElementById('input-password').value
-    let validaLogin = false
 
+let senhaInput = document.getElementById('input-password');
 
-    for(let i in usuarios){
-        if(pegaUsuario == usuarios[i].login && pegaSenha == usuarios[i].pass){
-            location.href="public/pages/home.html"
-            validaLogin = true
-            break
-        }else if(pegaUsuario == "admin" && pegaSenha == "admin"){
-            location.href="public/pages/admin.html"
-            validaLogin = true
-            break
+senhaInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        logar();
+    }
+});
+
+function logar() {
+    let pegaUsuario = document.getElementById('input-usuario').value;
+    let pegaSenha = document.getElementById('input-password').value;
+    let validaLogin = false;
+
+    for (let i in usuarios) {
+        if (pegaUsuario == usuarios[i].login && pegaSenha == usuarios[i].pass) {
+            location.href = "public/pages/home.html";
+            validaLogin = true;
+            break;
+        } else if (pegaUsuario == "admin" && pegaSenha == "admin") {
+            location.href = "public/pages/admin.html";
+            validaLogin = true;
+            break;
         }
     }
 
-    if(validaLogin == true){
-        alert('ok')
-    }else{
-        alert('erro')
+    if (validaLogin) {
+        alert('Bem-vindo!');
+    } else {
+        alert('Usuário ou senha incorreta');
     }
-})
-    
-
+}
+// ...
