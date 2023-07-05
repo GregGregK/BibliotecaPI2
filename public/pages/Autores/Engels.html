@@ -1,200 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/views/styles.css">
-        <link rel="stylesheet" href="/views/todos.css">
-        <script src="/js/scripts.js" defer></script>
-        <script src="/js/todos.js" defer></script>
-        <title>Página inicial</title>
-    </head>
-<body>
-
-    <section class="NavBar">
-        <nav>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/views/styles.css">
+      <link rel="stylesheet" href="/views/todos.css">
+      <script src="/js/scripts.js" defer></script>
+      <script src="/js/todos.js" defer></script>
+      <title>Página inicial</title>
+   </head>
+   <body>
+      <section class="NavBar">
+         <nav>
             <div class="wrapper">
-                <div class="search-bar"><textarea id="search-input" placeholder="Procure"></textarea></div>
-                <input type="radio" name="slide" id="menu-btn">
-                <input type="radio" name="slide" id="cancel-btn">
-                <ul class="nav-links">
-                    <label for="cancel-btn" class="btn cancel-btn"><i class="fas fa-times"></i></label>
-                    <li>
-                        <a href="/public/pages/home.html">
-                            Home
-                        </a>
-                        </li>
-                    <li>
-                        <a href="#" class="desktop-item">Usuário</a>
-                        <input type="checkbox" id="showDrop">
-                        <label for="showDrop" class="mobile-item">Usuário</label>
-                        <ul class="drop-menu">
-                            <li><a href="minhaLista.html">Minha lista</a></li>
-                            <li><a href="/public/index.html">Sair</a></li>
-                    </ul>
-                    </li>
-                        <li>
-                            <a href="#" class="desktop-item" hidden>Menu</a>
-                            <input type="checkbox" id="showMega">
-                            <label for="showMega" class="mobile-item">Menu</label>
-                            <div class="mega-box">
-                                <div class="content">
-                                    <div class="row">
-                                        <img src="/assets/img/Library 1.jpg" alt="">
-                                    </div>
-                                    <div class="row">
-                                        <header>Genêros</header>
-                                        <ul class="mega-links">
-                                            <li><a href="#">Terror</a></li>
-                                            <li><a href="#">Aventura</a></li>
-                                            <li><a href="#">Romance</a></li>
-                                            <li><a href="#">Mangás</a></li>
-                                            <li><a href="#">Hq's</a></li>
-                                            <li><a href="#">Filosofia</a></li>
-                                            <li><a href="todos.html">Ver todos</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="row">
-                                        <header>Autores</header>
-                                        <ul class="mega-links">
-                                            <li><a href="/public/pages/Autores/KarlMarx.html">Karl marx</a></li>
-                                            <li><a href="/public/pages/Autores/Engels.html">Engels</a></li>
-                                            <li><a href="/public/pages/Autores/Lenine.html">Lenine</a></li>
-                                            <li><a href="/public/pages/Autores/SlavojZizek.html">Slavoj Zizek</a></li>
-                                            <li><a href="/public/pages/Autores/Nietzche.html">Nietzche</a></li>
-                                            <li><a href="/public/pages/Autores/OscarWilde.html">Oscar wilde</a></li>
-                                            <li><a href="todos.html">Ver todos</a></li>
-                                         </ul>
-                                    </div>
-                                    <div class="row">
-                                        <header>Geral</header>
-                                        <ul class="mega-links">
-                                            <li><a href="#">Noticias</a></li>
-                                            <li><a href="#">Mais acessados</a></li>
-                                            <li><a href="#">Populares essa semana</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    
-                </ul>
-                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+               <div class="search-bar"><textarea id="search-input" placeholder="Procure"></textarea></div>
+               <input type="radio" name="slide" id="menu-btn">
+               <input type="radio" name="slide" id="cancel-btn">
+               <ul class="nav-links">
+                  <label for="cancel-btn" class="btn cancel-btn"><i class="fas fa-times"></i></label>
+                  <li>
+                     <a href="/public/pages/home.html">
+                     Home
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="desktop-item">Usuário</a>
+                     <input type="checkbox" id="showDrop">
+                     <label for="showDrop" class="mobile-item">Usuário</label>
+                     <ul class="drop-menu">
+                        <li><a href="/public/pages/minhaLista.html">Minha lista</a></li>
+                        <li><a href="/public/index.html">Sair</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#" class="desktop-item" hidden>Menu</a>
+                     <input type="checkbox" id="showMega">
+                     <label for="showMega" class="mobile-item">Menu</label>
+                     <div class="mega-box">
+                        <div class="content">
+                           <div class="row">
+                              <img src="/assets/img/Library 1.jpg" alt="">
+                           </div>
+                           <div class="row">
+                              <header>Genêros</header>
+                              <ul class="mega-links">
+                                 <li><a href="/public/pages/todos.html">Terror</a></li>
+                                 <li><a href="/public/pages/todos.html">Aventura</a></li>
+                                 <li><a href="/public/pages/todos.html">Romance</a></li>
+                                 <li><a href="/public/pages/todos.html">Mangás</a></li>
+                                 <li><a href="/public/pages/todos.html">Hq's</a></li>
+                                 <li><a href="/public/pages/todos.html">Filosofia</a></li>
+                                 <li><a href="/public/pages/todos.html">Ver todos</a></li>
+                              </ul>
+                           </div>
+                           <div class="row">
+                              <header>Autores</header>
+                              <ul class="mega-links">
+                                 <li><a href="/public/pages/Autores/KarlMarx.html">Karl marx</a></li>
+                                 <li><a href="/public/pages/Autores/Engels.html">Engels</a></li>
+                                 <li><a href="/public/pages/Autores/Lenine.html">Lenine</a></li>
+                                 <li><a href="/public/pages/Autores/SlavojZizek.html">Slavoj Zizek</a></li>
+                                 <li><a href="/public/pages/Autores/Nietzche.html">Nietzche</a></li>
+                                 <li><a href="/public/pages/Autores/OscarWilde.html">Oscar wilde</a></li>
+                                 <li><a href="todos.html">Ver todos</a></li>
+                              </ul>
+                           </div>
+                           <div class="row">
+                              <header>Geral</header>
+                              <ul class="mega-links">
+                                 <li><a href="#">Noticias</a></li>
+                                 <li><a href="#">Mais acessados</a></li>
+                                 <li><a href="#">Populares essa semana</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+               <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
             </div>
-        </nav>
-    </section>
-    
-    <section class="section-cards">
-        <div class="container-cards">
-            
+         </nav>
+      </section>
+      <section class="section-cards">
+         <div class="container-cards">
             <div class="grid">
-                <div class="cards search-results">
-                    <a href="/public/pages/menuInfo.html">
-                        <img src="/assets/img/712+f2W4uoL._AC_UF1000,1000_QL80_.jpg" alt="">
-                        <p class="title">A condição da classe trabalhadora na Inglaterra</p>
-                        <p class="autor">Friedrich Engels</p>
-                    </a>
-                </div>
-                
-                <div class="cards">
-                    <a href="/public/pages/menuInfo.html">
-                        <img src="/assets/img/karl-marx-s-das-kapital.jpg" alt="">
-                        <p class="title">O Capital: 1</p>
-                        <p class="autor">Karl Marx</p>
-                    </a>
-                        
-                </div>
-    
-                <div class="cards">
-                    <a href="/public/pages/menuInfo.html">
-                        <img src="/assets/placeholder.jpg" alt="">
-                         <p class="title">A origem da família, da propriedade privada e do Estado</p>
-                        <p class="autor">Friedrich Engels</p>
-                    </a>
-                </div>
-    
-                <div class="cards">
-                    <a href="/public/pages/menuInfo.html">
-                        <img src="/assets/placeholder.jpg" alt="">
-                    <p class="title">Ludwig Feuerbach e o fim da filosofia clássica alemã</p>
-                    <p class="autor">Friedrich Engels</p>
-                    </a>
-                    
-                </div>
-    
-                <div class="cards">
-                    <a href="/public/pages/menuInfo.html">
-                        <img src="/assets/placeholder.jpg" alt="">
-                    <p class="title">Anti-Dühring</p>
-                    <p class="autor">Friedrich Engels</p>
-                    </a>
-                    
-                </div>
-    
-                <div class="cards">
-                    <a href="/public/pages/menuInfo.html">
-                        <img src="/assets/placeholder.jpg" alt="">
-                    <p class="title">A situação da classe trabalhadora na Inglaterra</p>
-                    <p class="autor">Friedrich Engels</p>
-                    </a>
-                    
-                </div>
-    
-                <div class="cards">
-                    <a href="/public/pages/menuInfo.html">
-                        <img src="/assets/placeholder.jpg">
-                    <p class="title">A guerra camponesa na Alemanha</p>
-                    <p class="autor">Friedrich Engels</p>
-                    </a>
-                    
-                </div>
-    
-                <div class="cards">
-                    <a href="/public/pages/menuInfo.html">
-                        <img src="/assets/placeholder.jpg" alt="">
-                        <p class="title">Feuerbach: Oposição das concepções materialista e idealista</p>
-                        <p class="autor">Friedrich Engels</p>
-                    </a>
-                    
-                </div>
-    
-                <div class="cards">
-                    <a href="/public/pages/menuInfo.html">
-                        <img src="/assets/placeholder.jpg" alt="">
-                    <p class="title">Do socialismo utópico ao socialismo científico</p>
-                    <p class="autor">Friedrich Engels</p>
-                    </a>
-                    
-                </div>
-    
-                <div class="cards">
-                    <a href="/public/pages/menuInfo.html">
-                        <img src="/assets/placeholder.jpg" alt="">
-                    <p class="title">O papel do trabalho na transformação do macaco em homem</p>
-                    <p class="autor">Friedrich Engels</p>
-                    </a>
-                    
-                </div>
-    
-                <div class="cards">
-                    <a href="/public/pages/menuInfo.html">
-                        <img src="/assets/placeholder.jpg" alt="">
-                    <p class="title">A dialética da natureza</p>
-                    <p class="autor">Friedrich Engels</p>
-                    </a>
-                    
-                </div>
-                
+               <div class="cards search-results">
+                  <a href="/public/pages/menuInfo.html">
+                     <img src="/assets/img/classe trabalhadora.jpg" alt="">
+                     <p class="title">A condição da classe trabalhadora na Inglaterra</p>
+                     <p class="autor">Friedrich Engels</p>
+                  </a>
+               </div>
+               <div class="cards">
+                  <a href="/public/pages/img/família.html">
+                     <img src="/assets/img/familia.jpg" alt="">
+                     <p class="title">A origem da família, da propriedade privada e do Estado</p>
+                     <p class="autor">Friedrich Engels</p>
+                  </a>
+               </div>
+               <div class="cards">
+                  <a href="/public/pages/menuInfo.html">
+                     <img src="/assets/img/feuerbach[.jpg" alt="">
+                     <p class="title">Ludwig Feuerbach e o fim da filosofia clássica alemã</p>
+                     <p class="autor">Friedrich Engels</p>
+                  </a>
+               </div>
+               <div class="cards">
+                  <a href="/public/pages/menuInfo.html">
+                     <img src="/assets/img/anti duhring.jpg" alt="">
+                     <p class="title">Anti-Dühring</p>
+                     <p class="autor">Friedrich Engels</p>
+                  </a>
+               </div>
+               <div class="cards">
+                  <a href="/public/pages/menuInfo.html">
+                     <img src="/assets/img/guerras.jpg">
+                     <p class="title">A guerra camponesa na Alemanha</p>
+                     <p class="autor">Friedrich Engels</p>
+                  </a>
+               </div>
+               <div class="cards">
+                  <a href="/public/pages/menuInfo.html">
+                     <img src="/assets/img/socialismo.jpg" alt="">
+                     <p class="title">Do socialismo utópico ao socialismo científico</p>
+                     <p class="autor">Friedrich Engels</p>
+                  </a>
+               </div>
+               <div class="cards">
+                  <a href="/public/pages/menuInfo.html">
+                     <img src="/assets/img/macaco.jpg" alt="">
+                     <p class="title">O papel do trabalho na transformação do macaco em homem</p>
+                     <p class="autor">Friedrich Engels</p>
+                  </a>
+               </div>
+               <div class="cards">
+                  <a href="/public/pages/menuInfo.html">
+                     <img src="/assets/img/dialetica.jpg" alt="">
+                     <p class="title">A dialética da natureza</p>
+                     <p class="autor">Friedrich Engels</p>
+                  </a>
+               </div>
             </div>
-        <p id="no-results" class="no-results" style="display: none;"><img src="/assets/img/sorry-item-not-found-3328225-2809510.webp" alt="">Lamentamos, não foi possível encontrar nenhum livro com esse título ou autor. Tente verificar a gramática.</p>
-    </div>
-    </section>
-
-   
-</body>
+            <p id="no-results" class="no-results" style="display: none;"><img src="/assets/img/sorry-item-not-found-3328225-2809510.webp" alt="">Lamentamos, não foi possível encontrar nenhum livro com esse título ou autor. Tente verificar a gramática.</p>
+         </div>
+      </section>
+   </body>
 </html>

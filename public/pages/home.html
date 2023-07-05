@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="/js/scripts.js" defer ></script>
+      <script src="/js/home.js" defer></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +15,11 @@
       <link rel="stylesheet" href="/views/home.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <title>Home</title>
    </head>
-<body>
-   <nav>
+   <body>
+      <nav>
          <div class="wrapper">
             <div class="logo"><a href="home.html">Alexandria</a></div>
             <input type="radio" name="slide" id="menu-btn">
@@ -70,9 +71,9 @@
                         <div class="row">
                            <header>Geral</header>
                            <ul class="mega-links">
-                              <li><a href="todos.html">Noticias</a></li>
-                              <li><a href="todos.html">Mais acessados</a></li>
-                              <li><a href="todos.html">Populares essa semana</a></li>
+                              <li><a href="home.html">Noticias</a></li>
+                              <li><a href="home.html">Mais acessados</a></li>
+                              <li><a href="home.html">Populares essa semana</a></li>
                            </ul>
                         </div>
                      </div>
@@ -81,94 +82,67 @@
             </ul>
             <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
          </div>
-   </nav>
-
-
-   <div class="LMLS">
-      <h1>Noticias</h1>
-   </div>
-   <div class="news-card">
-
-      <img src="/assets/img/book-pile.png" class="book-pile img">
-      <p>
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius justo nec augue facilisis, id pellentesque ipsum luctus. Aenean ac dui dolor. Aenean condimentum tincidunt ipsum at finibus. Aliquam commodo velit et est euismod, nec euismod massa tristique. Curabitur auctor fringilla fringilla. Sed malesuada quam massa, nec aliquet lorem egestas vitae. Aenean egestas purus velit, vitae tincidunt nulla auctor ut. Phasellus vel accumsan justo. Ut eu pulvinar justo, ac bibendum erat. Integer felis arcu, elementum quis gravida accumsan, mattis ac enim. Sed gravida egestas sem, sed egestas augue feugiat ut. Nunc a sodales ligula, a rutrum dui. Vestibulum vel risus bibendum, congue neque a, luctus ex. Maecenas sodales auctor tellus scelerisque fringilla.
-      </p>
-
-   </div>
-
-   
-   <div class="LMLS">
+      </nav>
+      <div class="LMLS">
+         <h1>Noticias</h1>
+      </div>
+      <div class="news-card">
+         <img src="/assets/img/book-pile.png" class="book-pile img">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius justo nec augue facilisis, id pellentesque ipsum luctus. Aenean ac dui dolor. Aenean condimentum tincidunt ipsum at finibus. Aliquam commodo velit et est euismod, nec euismod massa tristique. Curabitur auctor fringilla fringilla. Sed malesuada quam massa, nec aliquet lorem egestas vitae. Aenean egestas purus velit, vitae tincidunt nulla auctor ut. Phasellus vel accumsan justo. Ut eu pulvinar justo, ac bibendum erat. Integer felis arcu, elementum quis gravida accumsan, mattis ac enim. Sed gravida egestas sem, sed egestas augue feugiat ut. Nunc a sodales ligula, a rutrum dui. Vestibulum vel risus bibendum, congue neque a, luctus ex. Maecenas sodales auctor tellus scelerisque fringilla.
+         </p>
+      </div>
+      <div class="LMLS">
          <h1>Livros mais lidos dessa semana</h1>
-   </div>
-
-   <div class="carousel-container">
+      </div>
+      <div class="carousel-container">
          <div class="owl-carousel">
             <div class="item">
                <div class="cards">
                   <a href="menuInfo.html">
-                     <img src="/assets/img/712+f2W4uoL._AC_UF1000,1000_QL80_.jpg" alt="">
-                     <p class="title">IT a coisa</p>
-                     <p class="autor">Stephen king</p>
+                     <img src="/assets/img/junho.jpg" alt="">
+                     <p class="title">Jornadas de junho</p>
+                     <p class="autor">Tiana Maciel Ellwanger</p>
                   </a>
                </div>
             </div>
-
             <div class="item">
                <div class="cards">
                   <a href="menuInfo.html">
-                     <img src="/assets/img/karl-marx-s-das-kapital.jpg" alt="">
-                     <p class="title">O Capital: 1</p>
-                     <p class="autor">Karl Marx</p>
-                  </a>       
-               </div>
-            </div>
-
-            <div class="item">
-               <div class="cards">
-                  <a href="menuInfo.html">
-                     <img src="/assets/img/612uTfSKLvL._AC_UF1000,1000_QL80_.jpg" alt="">
-                        <p class="title">Universo em uma casca de noz</p>
-                     <p class="autor">Stephen Hawking</p>
+                     <img src="/assets/img/cantiga.jpg" alt="">
+                     <p class="title">A cantiga dos passaros e das serpentes</p>
+                     <p class="autor">Suzanne Collins</p>
                   </a>
                </div>
             </div>
-
             <div class="item">
-                  <div class="cards">
-                     <a href="menuInfo.html">
-                        <img src="/assets/img/Jogos vorazes.jpg" alt="">
-                        <p class="title">Jogos vorazes</p>
-                        <p class="autor">Suzanne Collins</p>
-                     </a>
-                  </div>
+               <div class="cards">
+                  <a href="menuInfo.html">
+                     <img src="/assets/img/clean code.jpg" alt="">
+                     <p class="title">Clean Code</p>
+                     <p class="autor">Robert C. Martin</p>
+                  </a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="cards">
+                  <a href="menuInfo.html">
+                     <img src="/assets/img/Jogos vorazes.jpg" alt="">
+                     <p class="title">Jogos vorazes</p>
+                     <p class="autor">Suzanne Collins</p>
+                  </a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="cards">
+                  <a href="menuInfo.html">
+                     <img src="/assets/img/declinio de um homem.jpg " alt="">
+                     <p class="title">Declinio de um homem</p>
+                     <p class="autor">Osamu Dazai</p>
+                  </a>
+               </div>
             </div>
          </div>
-   </div>
-
-</body>
-<script>
-$('.owl-carousel').owlCarousel({
-   loop:true,
-   margin:10,
-   nav:true,
-   responsive:{
-      0:{
-            items:2
-      },
-      400:{
-            items:2
-      },
-      800:{
-            items:4
-      },
-      1000:{
-            items:6
-      }
-   }
-})
-</script>
-
-
-
-   
+      </div>
+   </body>
 </html>

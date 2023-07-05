@@ -1,10 +1,10 @@
 function filtrarCards() {
-    var searchTerm = document.getElementById('search-input').value.toLowerCase(); // Obtém o valor digitado e converte para minúsculas
-    var cards = document.getElementsByClassName('cards'); // Obtém todos os elementos com a classe 'cards'
-    var noResultsParagraph = document.getElementById('no-results'); // Obtém a referência ao parágrafo
+    var searchTerm = document.getElementById('search-input').value.toLowerCase(); 
+    var cards = document.getElementsByClassName('cards'); 
+    var noResultsParagraph = document.getElementById('no-results'); 
     
     // Percorre os cards e exibe apenas aqueles que possuem o título ou autor correspondente ao valor digitado
-    var foundResults = false; // Variável para controlar se foram encontrados resultados
+    var foundResults = false; 
     
     for (var i = 0; i < cards.length; i++) {
       var title = cards[i].querySelector('.title').innerText.toLowerCase(); // Obtém o título do card e converte para minúsculas
@@ -38,22 +38,13 @@ function filtrarCards() {
     }
   });
 
-  
-  window.addEventListener("DOMContentLoaded", () => {
-    const params = new URLSearchParams(window.location.search);
-    const title = params.get("title");
 
-    if (title) {
-      // Criar a div com base no título recebido
-      const book = document.createElement("div");
-      book.classList.add("book");
-
-      const bookTitle = document.createElement("h3");
-      bookTitle.innerText = title;
-      book.appendChild(bookTitle);
-
-      const bookList = document.querySelector("#book-list");
-      bookList.appendChild(book);
+   // Embaralha os cards (livros)
+   function shuffleCards() {
+    var grid = document.getElementById('grid');
+    for (var i = grid.children.length; i >= 0; i--) {
+       grid.appendChild(grid.children[Math.random() * i | 0]);
     }
-  });
+ }
+ window.onload = shuffleCards;
   

@@ -54,6 +54,46 @@
     
 }
 
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+ }
+ 
+ .owl-carousel .owl-nav button {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    font-size: 24px;
+    margin: 0 10px;
+    padding: 5px 10px;
+ }
+ 
+ .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: 0;
+ }
+ 
+ .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: 0;
+ }
+
+ /* Adicione um espaçamento entre os cards no Owl Carousel */
+.owl-carousel .owl-stage {
+    margin-left: 15px;
+    margin-right: 15px;
+ }
+ 
+ .owl-carousel .owl-item {
+    margin-right: 10px;
+ }
+
+ 
+ 
+
 
 
 
