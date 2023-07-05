@@ -20,13 +20,7 @@ const usuarios = [
 let botao = document.getElementById('button-login');
 
 
-let senhaInput = document.getElementById('input-password');
 
-senhaInput.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        logar();
-    }
-});
 
 function logar() {
     let pegaUsuario = document.getElementById('input-usuario').value;
@@ -44,6 +38,14 @@ function logar() {
             break;
         }
     }
+
+    let senhaInput = document.getElementById('input-password');
+
+    senhaInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        logar();
+    }
+    });
 
     if (validaLogin) {
         alert('Bem-vindo!');
