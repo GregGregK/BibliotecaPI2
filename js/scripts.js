@@ -27,11 +27,11 @@ botao.addEventListener('click', function logar(){
 
     for(let i in usuarios){
         if(pegaUsuario == usuarios[i].login && pegaSenha == usuarios[i].pass){
-            location.href="pages/home.html"
+            location.href="public/pages/home.html"
             validaLogin = true
             break
         }else if(pegaUsuario == "admin" && pegaSenha == "admin"){
-            location.href="pages/admin.html"
+            location.href="public/pages/admin.html"
             validaLogin = true
             break
         }
